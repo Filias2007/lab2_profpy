@@ -1,0 +1,2 @@
+[console_scripts]
+store-analyzer = store_analyzer.main:main

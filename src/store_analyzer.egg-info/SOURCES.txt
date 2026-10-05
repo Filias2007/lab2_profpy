@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/store_analyzer/__init__.py
+src/store_analyzer/analytics.py
+src/store_analyzer/data.py
+src/store_analyzer/decorators.py
+src/store_analyzer/main.py
+src/store_analyzer/processors.py
+src/store_analyzer.egg-info/PKG-INFO
+src/store_analyzer.egg-info/SOURCES.txt
+src/store_analyzer.egg-info/dependency_links.txt
+src/store_analyzer.egg-info/entry_points.txt
+src/store_analyzer.egg-info/requires.txt
+src/store_analyzer.egg-info/top_level.txt

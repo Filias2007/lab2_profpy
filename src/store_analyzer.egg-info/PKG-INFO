@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: store-analyzer
+Version: 0.1.0
+Summary: Аналіз структур даних та функціональна декомпозиція інтернет-магазину (Лабораторна робота №2)
+Author-email: Maksym Filias <maksym.filias@lnu.edu.ua>
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+
+# Store Analyzer (Аналіз інтернет-магазину)
+
+Навчальний проєкт з курсу **«Професійний Python»** (Лабораторна робота №2, Варіант 3: «Аналіз інтернет-магазину»).
+
+## Опис проєкту
+Модуль для структурного аналізу товарного каталогу та залишків інтернет-магазину. Проєкт демонструє використання базових і спеціалізованих структур даних Python (`list`, `tuple`, `set`, `dict`, `Counter`, `defaultdict`), алгоритмів групування, фільтрації через замикання (`closure`), вимірювання часу виконання через декоратор (`measure_time`) та експериментального порівняння часової складності за Big-O.
+
+## Структура пакету
+```text
+src/store_analyzer/
+├── __init__.py       # Ініціалізація пакета та експорт публічного API
+├── main.py           # Консольна демонстрація аналітики та запуск бенчмарку
+├── data.py           # Початковий набір структурованих даних
+├── decorators.py     # Декоратор вимірювання часу виконання функцій
+├── processors.py     # Робота зі структурами даних (set, dict index, Counter, defaultdict)
+└── analytics.py      # Агрегація, сортування, функції з *args, **kwargs та closure

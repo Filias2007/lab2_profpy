@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "store-analyzer"
+version = "0.1.0"
+description = "Аналіз структур даних та функціональна декомпозиція інтернет-магазину (Лабораторна робота №2)"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Maksym Filias", email = "maksym.filias@lnu.edu.ua" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+store-analyzer = "store_analyzer.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
